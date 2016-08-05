@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>苏迪迪汽车团购平台</title>
+    <%= favicon 'brand-icon.png', rel: 'icon', type: 'image/png' %>
+    <%= javascript 'jquery-3.1.0.min', 'bootstrap.min', 'material.min', 'ripples.min', 'base' %>
+    <%= stylesheet 'bootstrap.min', 'bootstrap-material-design.min', 'ripples.min', 'base' %>
+  </head>
+  <body>
+    <%= yield %>
+    <div id="footer" class="text-center navbar navbar-default">
+      <p><small>公司首页 | 公司介绍 | 关于团购 | 团购报名 | 车友会 | 站务公告</small></p>
+	  <p><small>版权所有：Copyright　2016　武汉苏迪迪汽车咨询服务有限公司 地址：武汉市洪山区鲁磨路118号国光大厦B座1205室 电话：02712345678 技术支持：幽灵技术</small></p>
+    </div>
+  </body>
+</html>
