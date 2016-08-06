@@ -31,6 +31,10 @@
 	color: #ef5350;
 }
 
+.color-indigo-darken-3 {
+	color: #283593;
+}
+
 .background-color-brand {
 	background-color: #009688;
 }
@@ -45,6 +49,10 @@
 
 .background-color-red-lighten-1 {
 	background-color: #ef5350;
+}
+
+.background-color-indigo-darken-3 {
+	background-color: #283593;
 }
 
 .top-buffer {
