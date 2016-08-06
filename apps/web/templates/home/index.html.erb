@@ -87,27 +87,42 @@
           <div class="row text-center top-buffer">
             <% feature_row.each do |feature| %>
               <div class="col-lg-4">
-                <span class="icon-container color-red-lighten-1">
-                  <% if feature[:type] == :icon %>
-                    <i class="icon fa <%= feature[:icon_content] %>"></i>
-                  <% end %>
-                  <% if feature[:type] == :text %>
-                    <%= feature[:icon_content] %>
-                  <% end %>
-                </span>
-                <h2><%= feature[:title] %></h2>
-                <p><%= feature[:description] %></p>
+                <div class="width-padding">
+                  <span class="icon-container color-red-lighten-1">
+                    <% if feature[:type] == :icon %>
+                      <i class="icon fa <%= feature[:icon_content] %>"></i>
+                    <% end %>
+                    <% if feature[:type] == :text %>
+                      <%= feature[:icon_content] %>
+                    <% end %>
+                  </span>
+                  <h2><%= feature[:title] %></h2>
+                  <p><%= feature[:description] %></p>
+                </div>
               </div>
             <% end %>
           </div>
         <% end %>
 </div>
 </div>
-<div class="area-car-info top-buffer background-color-success color-white">
-
+<div class="area-car-info top-buffer bottom-buffer background-color-success color-white">
   <div class="bs-component container">
-        <div class="row">
-        <div class="col-md-6"></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div >
+          <%= image('e.jpg', alt: '图片1', id: 'are', class: 'image, width-full') %>
+          <!-- <img src="..." alt="..."> -->
+          <div class="caption font-size-3 top-buffer">
+            <h4>2015年4月别克团购开团通知</h4>
+            <p>定于2015年4月19日（周日）组织别克全系团购。本次团购车型包括2015款凯越、昂科拉、英朗XT、全新英朗GT、君威、君越、昂科威车型。报名方式：1、手...</p>
+          </div>
+
+          <div class="caption top-buffer margin-bottom">
+            <h4>2014年别克团购收官之战定于12月7日开团</h4>
+            <p>2014年最后一场别克团购将于12月7日（周日）开团，本次团购主力车型凯越系列、英朗系列、君威系列，昂科拉15款。元旦、春节将至，武汉各4S店都相...</p>
+          </div>
+        </div>
+      </div>
         <div class="col-md-6">
           <div class="list-group">
             <div class="list-group-item">
