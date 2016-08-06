@@ -77,53 +77,77 @@
 </div>
 
 </div>
-<div class="x">
+<div class="area-services background-color-warning color-white">
 	<div id="features" class="container">
-
-	<div class="row text-center">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>底价承诺</h2>
-          <p>开团前，团长会在本地区众多4S店之间逐一询价合作，保证价格竞争力</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>省时省心</h2>
-          <p>开团前，团长会在本地区众多4S店之间逐一询价合作，保证价格竞争力</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-	<div class="row text-center">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>底价承诺</h2>
-          <p>开团前，团长会在本地区众多4S店之间逐一询价合作，保证价格竞争力</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>省时省心</h2>
-          <p>开团前，团长会在本地区众多4S店之间逐一询价合作，保证价格竞争力</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      </div>
+        <div class="page-header text-center">
+          <h3 id="progress-basic">我们的服务</h3>
+        <middle>Our Services</middle>
+        </div>
+        <% feature_rows.each do |feature_row| %>
+          <div class="row text-center top-buffer">
+            <% feature_row.each do |feature| %>
+              <div class="col-lg-4">
+                <span class="icon-container color-red-lighten-1">
+                  <% if feature[:type] == :icon %>
+                    <i class="icon fa <%= feature[:icon_content] %>"></i>
+                  <% end %>
+                  <% if feature[:type] == :text %>
+                    <%= feature[:icon_content] %>
+                  <% end %>
+                </span>
+                <h2><%= feature[:title] %></h2>
+                <p><%= feature[:description] %></p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
 </div>
-<div class="x"></div>
+</div>
+<div class="area-car-info top-buffer background-color-success color-white">
+
+  <div class="bs-component container">
+        <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="list-group">
+            <div class="list-group-item">
+              <div class="row-action-primary">
+                <i class="material-icons">01</i>
+              </div>
+              <div class="row-content">
+                <!-- <div class="least-content">15m</div> -->
+                <h4 class="">2014年9月别克团购完美收官</h4>
+
+                <p class="list-group-item-text">9月份紧抓金九银十的购车良机，切诚公司组织了三期别克团购，9月团购圆满落下帷幕。本月团购以疯狂最底价回馈车友，三期团购订车达到90台的佳绩</p>
+              </div>
+            </div>
+            <div class="list-group-separator"></div>
+            <div class="list-group-item">
+              <div class="row-action-primary">
+                <i class="material-icons">02</i>
+              </div>
+              <div class="row-content">
+                <!-- <div class="least-content">10m</div> -->
+                <h4 class="">10月武汉车展团购报名招募中</h4>
+
+                <p class="list-group-item-text">作为中国中部地区规模最大的武汉国际汽车展览会（简称：武汉车展），今年将于10月16-21日在武汉国际博览中心隆重举行，16日为媒体日暨专业观众日...</p>
+              </div>
+            </div>
+            <div class="list-group-separator"></div>
+            <div class="list-group-item">
+              <div class="row-action-primary">
+                <i class="material-icons">03</i>
+              </div>
+              <div class="row-content">
+                <!-- <div class="least-content">8m</div> -->
+                <h4 class="list-group-item-heading"></h4>
+
+                <p class="list-group-item-text"></p>
+              </div>
+            </div>
+            <div class="list-group-separator"></div>
+          </div>
+        </div>
+        </div>
+        </div>
+</div>

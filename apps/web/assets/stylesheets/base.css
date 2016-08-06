@@ -14,3 +14,55 @@
 	padding: 2rem;
 	margin: 0px;
 }
+
+.color-brand {
+	color: #009688;
+}
+
+.color-success {
+	color: #4caf50;
+}
+
+.color-warning {
+	color: #ff5722;
+}
+
+.color-red-lighten-1 {
+	color: #ef5350;
+}
+
+.background-color-brand {
+	background-color: #009688;
+}
+
+.background-color-success {
+	background-color: #4caf50;
+}
+
+.background-color-warning {
+	background-color: #ff5722;
+}
+
+.background-color-red-lighten-1 {
+	background-color: #ef5350;
+}
+
+.top-buffer {
+	padding-top: 30px;
+}
+
+.color-white {
+	color: white;
+}
+
+.icon-container {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 140px;
+    font-size: 5em;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    /*color: white;*/
+}
