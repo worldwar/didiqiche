@@ -54,9 +54,24 @@
 .background-color-indigo-darken-3 {
 	background-color: #283593;
 }
+.background-color-transparent {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#image-well-1, #image-well-2, #image-well-3, #image-well-4 {
+	background-color: rgba(0, 0, 0, 0.1);
+}
 
 .top-buffer {
 	padding-top: 30px;
+}
+
+.left-buffer {
+	padding-left: 30px;
+}
+
+.right-buffer {
+	padding-right: 30px;
 }
 
 .bottom-buffer {
